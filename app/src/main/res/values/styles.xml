@@ -17,7 +17,7 @@
     </style>
 
     <style name="ThemeOverlay.GVent.ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
-        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.jollypanda.gvent_databinding.di.component
 
 import com.jollypanda.gvent_databinding.data.remote.utils.OkHttpClientFactory
+import com.jollypanda.gvent_databinding.data.repositories.UserRepository
 import com.jollypanda.gvent_databinding.di.module.AppModule
 import com.jollypanda.gvent_databinding.di.module.ModelsModule
 import com.jollypanda.gvent_databinding.di.module.NetworkModule
@@ -17,4 +18,5 @@ import javax.inject.Singleton
 interface AppComponent {
     fun injectTo(okHttpClientFactory: OkHttpClientFactory)
     fun injectTo(mainPresenter: MainPresenter)
+    fun injectTo(userRepository: UserRepository)
 }

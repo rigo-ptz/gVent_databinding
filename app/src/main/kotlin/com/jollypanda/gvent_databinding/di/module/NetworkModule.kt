@@ -21,8 +21,8 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    fun provideApi(retrofit: Retrofit.Builder, clientFactory: OkHttpClientFactory, gson: Gson): Api =
-            retrofit
+    fun provideApi(clientFactory: OkHttpClientFactory, gson: Gson): Api =
+            Retrofit.Builder()
                     .baseUrl(BuildConfig.BASE_URL)
                     .client(clientFactory.buildClient())
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

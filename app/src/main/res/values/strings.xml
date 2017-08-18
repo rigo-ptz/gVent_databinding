@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GVent_DataBinding</string>
+    <string name="empty_repos_list">Пустота, да и только</string>
+    <string name="btn_retry">Не повторять больше ошибок</string>
 </resources>

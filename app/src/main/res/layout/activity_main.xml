@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable name="presenter" type="com.jollypanda.gvent_databinding.presentation.MainPresenter"/>
     </data>
 
     <LinearLayout
@@ -17,18 +17,18 @@
             android:layout_height="wrap_content"
             style="@style/Widget.GVent.Toolbar"/>
 
-        <!--<FrameLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <include
-                android:id="@+id/clRepoContent"
+                android:id="@+id/clContent"
                 app:presenter="@{presenter}"
-                layout="@layout/view_repo_content"/>
+                layout="@layout/view_content"/>
 
             <include
                 android:id="@+id/vEmptyContent"
                 app:presenter="@{presenter}"
-                layout="@layout/view_empty_repos_list"/>
+                layout="@layout/view_content_empty"/>
 
             <include
                 android:id="@+id/clProgress"
@@ -39,7 +39,7 @@
                 android:id="@+id/vError"
                 app:presenter="@{presenter}"
                 layout="@layout/view_error"/>
-        </FrameLayout>-->
+        </FrameLayout>
     </LinearLayout>
 
 </layout>
