@@ -33,6 +33,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(), MainView {
         binding.presenter = mainPresenter
         initToolbar()
         initLoadUsers()
+        // Можно также перенести в xml
         btnRetry.setOnClickListener { Toast.makeText(this, "Жоский хардкод here", Toast.LENGTH_SHORT).show() }
     }
 
